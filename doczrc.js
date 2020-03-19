@@ -10,4 +10,8 @@ export default {
     '制图器',
     '实用工具',
   ],
+  ignore: [
+    'README.md',
+    '/docs'
+  ],
 }

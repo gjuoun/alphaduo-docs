@@ -2,11 +2,13 @@
   "name": "next-gen-documentation",
   "scripts": {
     "docz:dev": "docz dev",
-    "docz:build": "docz build",
-    "docz:serve": "docz build && docz serve"
+    "docz:build": "docz build && node ./publish-github-pages.js",
+    "docz:serve": "docz build && docz serve",
+    "copy": "node ./publish-github-pages.js"
   },
   "dependencies": {
     "docz": "latest",
+    "node-powershell": "^4.0.0",
     "react": "16.8.0",
     "react-dom": "16.8.0"
   }
